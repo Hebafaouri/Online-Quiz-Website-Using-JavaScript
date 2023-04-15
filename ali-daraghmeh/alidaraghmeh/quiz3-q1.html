@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz3.css">
+</head>
+<body class="quiz3">
+   <!--this is list in left side-->
+  <div class="list-number-questions">
+     <div class="number-quiz3" id="q1">1</div>
+     <div class="number-quiz3" id="q2">2</div>
+     <div class="number-quiz3" id="q3">3</div>
+     <div class="number-quiz3" id="q4">4</div>
+     <div class="number-quiz3" id="q5">5</div>
+  </div>
+  <!--right-side-->
+  <form class="quiz3-form" >
+     <div class="quiz3-title">
+       <div class="title-questions"> 1 of 5 questions</div>
+       <!--countdown timer-->
+       <div class="timer-quiz3">
+        <img src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/stopwatch-icon.png" width="40px">
+        <span id="time-left">15s</span>
+      </div>
+     </div>
+     <hr>
+<!--options and question-->
+     <div class="question-quiz3">
+      <p>Question 1:</p>
+      <div id="question-1" class="question">
+        <h3>What is the definition of time complexity?</h3>
+        <div class="option">The number of operations an algorithm performs to complete its task</div>
+        <div class="option">The total amount of memory space used by an algorithm/program, including the space of input values for execution</div>
+        <div class="option">One of the sorting algorithms used to arrange a list of elements in order</div>
+        <div class="option">A basic algorithm for arranging a string of numbers or other elements in the correct order</div>
+      </div>
+    </div>
+    <!--next-button-->
+  <button id="next-button">Next</button>
+  </form>
+
+ 
+
+    <script src="quiz3-q1.js"></script>
+</body>
+</html>

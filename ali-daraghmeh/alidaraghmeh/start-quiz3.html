@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   .start-quiz3{
+    background: linear-gradient(184deg,#8754ff,#8E2DE2);
+   }
+   #start-button{
+      box-shadow: 2px 2px 5px black;
+      border-radius: 10px;
+      color: white;
+      font-size: larger;
+     height: 70px;
+     width: 10%;
+     background: linear-gradient(184deg,#8754ff,#8E2DE2);
+   margin-left: 40%;
+   margin-top: 20%;
+   position: absolute;
+   }
+    </style>
+</head>
+<body class="start-quiz3">
+    <button id="start-button">
+Start
+    </button>
+    <script >
+        
+        const startButton=document.getElementById("start-button");
+
+//start button 
+startButton.addEventListener('click',function(){
+   window.location.href= "quiz3-q1.html";
+})
+    </script>
+</body>
+</html>
