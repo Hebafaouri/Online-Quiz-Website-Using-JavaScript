@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!DOCTYPE html>
@@ -40,25 +41,28 @@
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Username" id="contact-name" onkeyup="validateName()" />
             </div>
+            <span id="name-error"> </span>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="Email"  id="contact-email" onkeyup="validateEmail()"/>
             </div>
+            <span id="email-error"></span>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Password"   id="contact-password" onkeyup="validatePassword()"/>
             </div>
+            <span id="password-error"></span> 
             <div class="input-field">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder=" Confirm Password" />
+                <input type="password" placeholder=" Confirm Password" id="contact2-password" onkeyup="validatePassword2()"/>
               </div>
-            <input type="submit" class="btn" value="Sign up" />
+              <span id="password2-error"></span> 
+            <input type="submit" class="btn" value="Sign up"/>
           </form>
         </div>
       </div>
-
       <div class="panels-container">
         <div class="panel left-panel">
           <div class="content">
@@ -78,7 +82,6 @@
         </div>
       </div>
     </div>
-
     <script src="login.js"></script>
   </body>
 </html>
