@@ -9,7 +9,7 @@ sign_up_btn.addEventListener("click", () => {
 sign_in_btn.addEventListener("click", () => {
   container.classList.remove("sign-up-mode");
 });
-// validation
+// validation start
 var nameError = document.getElementById('name-error');
 var emailError = document.getElementById('email-error');
 var passwordError = document.getElementById('password-error');
@@ -58,3 +58,68 @@ function validatePassword2 (){
   password2Error.innerHTML= '<i class="fa-solid fa-check"></i>';
   return true; 
 }
+//Validation end
+//submit function
+function validatesub() {
+  if (validatePassword2 () & validatePassword() &  validateEmail() & validateName() ){
+    saveData()
+    document.getElementById("successAlert").classList.remove('alert-failed')
+document.getElementById("successAlert").innerHTML = ' Registration successful'
+  }
+  else {
+    document.getElementById("successAlert").classList.add('alert-failed')
+    document.getElementById("successAlert").innerHTML = ' Register Account Failed'
+  }
+}
+//save data on local storage
+var myObject 
+var user = [ ]
+var id=Math.floor(Math.random() * 100)
+function saveData() {
+    event.preventDefault();
+    var name = document.getElementById('contact-name').value;
+    var email = document.getElementById('contact-email').value;
+    var password = document.getElementById('contact-password').value;
+     myObject = {"userData": [id,name,email,password] };
+    user.push( myObject.userData);
+    localStorage.setItem("userData", JSON.stringify(user));
+    console.log(localStorage.getItem('userData'));
+}
+
+//Check-login user
+function checkUser() {
+  event.preventDefault();
+  var userinput = document.getElementById("userlogin").value
+  var passwordinput = document.getElementById("userpassword").value
+  var storedData = localStorage.getItem("userData");
+
+// Check if there is any data stored under "userData"
+if (storedData) {
+// Parse the JSON string into an array
+const data = JSON.parse(storedData);
+// Store the retrieved data in a new array
+var newArray = data;
+// Do something with the new array
+console.log(newArray);
+} else {
+console.log("No data found in local storage.");
+}
+// Loop through the array and print each element
+var errorLogin = document.getElementById('errorLogin')
+for (var i = 0; i < newArray.length; i++) {
+  for (var j = 0; j < newArray[i].length; j++) {
+  }
+  if ((newArray[i][1]===userinput && newArray[i][3] ===passwordinput)) {
+    errorLogin.classList.remove('alert-failed')
+      errorLogin.innerHTML="correct password and email";
+      sessionStorage.setItem("userData",newArray[i][1]);
+      break;
+    }
+    else{
+      errorLogin.innerHTML="not correct password and email";
+      errorLogin.classList.add('alert-failed')
+    }
+}
+}
+
+
