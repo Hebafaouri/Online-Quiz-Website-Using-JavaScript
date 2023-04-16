@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>QuizApp</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body> 
+<header class="p-3 bg-dark text-white navbar-toggler">
+    <div class="container navbar-toggler">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Quiz</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
+
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me">
+            <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="text-end ms-auto">
+            <button type="button" class="btn btn-outline-light me-3">Login</button>
+            <button type="button" class="btn btn-warning me-3">Sign-up</button>
+        </div>
+        </div>
+    </div>
+    </header>
+    <!-- Slide Show -->
+<section>
+  <img class="mySlides" src="https://img.freepik.com/premium-vector/quiz-logo-with-speech-bubble-icon_149152-811.jpg?w=2000"
+  style="width:100%">
+  <img class="mySlides" src="https://www.pewresearch.org/internet/wp-content/uploads/sites/9/2017/02/PI_2017.02.08_Algorithms_featured.png"
+  style="width:100%">
+  <img class="mySlides" src="https://www.trios.com/uploads/2017/05/woman-holding-tablet-in-server-room.jpg"
+  style="width:100%">
+</section>
+
+
+<section class="aboutsite">
+<h1 id="title">Welcome to the Quiz App</h1>
+<p>We're excited to have you apply for the position! To help us get to know you better, we've created a short quiz that should take about 15 minutes to complete.</p>
+</div> 
+</section>
+<div class="containerone11">
+    <div class="card11">
+      <div class="box11">
+        <div class="content11">
+          <h2>01</h2>
+          <h3>Exam One</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+          <a href="#">Explore Quiz</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card11">
+      <div class="box11">
+        <div class="content11">
+          <h2>02</h2>
+          <h3>Exam Two</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+          <a href="#">Explore Quiz</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card11">
+      <div class="box11">
+        <div class="content11">
+          <h2>03</h2>
+          <h3>Exam Three</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, totam velit? Iure nemo labore inventore?</p>
+          <a href="#">  Explore Quiz</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<section id="contact">
+    <h2 style="color: white;">Contact Us</h2>
+    <form action="#" method="post">
+    <label for="name"  style="color: white;">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email" style="color: white;">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message" style="color: white;">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <input type="submit" value="Send">
+    </form>
+</section>
+<footer>
+    <div class="footerSec">
+    <p style="color: white;">Copyright © 2023</p>
+    <ul>
+        <li><a href="#" style="color: white;">Home</a></li>
+        <li><a href="#" style="color: white;">Quiz</a></li>
+        <li><a href="#" style="color: white;">Contact us </a></li>
+    </ul>
+    </div>
+</footer>
+<script>
+  // Automatic Slideshow - change image every 3 seconds
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+  }
+  </script>
+
+
+</body>
+</html>
