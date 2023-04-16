@@ -13,3 +13,13 @@
    x[myIndex-1].style.display = "block";
    setTimeout(carousel, 3000);
  }
+//  var button = document.getElementById("loginbtn");
+//  var openForm = function(button) {
+// 	window.location.href = "../Heba Faouri/index.html";
+// };
+//  var userData = sessionStorage.getItem("userData")
+// if (userData){
+//  var userName = sessionStorage.getItem("userData")
+//  var userTitle = document.getElementById('title')
+//  userTitle.innerHTML=  'Welcome' + ' '+ userName
+// }
