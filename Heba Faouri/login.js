@@ -125,10 +125,10 @@ for (var i = 0; i < newArray.length; i++) {
 
 
 
-// var userData = sessionStorage.getItem("userData")
-// if (userData){
-//  var userName = sessionStorage.getItem("userData")
-//  var userTitle = document.getElementById('title')
-//  userTitle.innerHTML=  'Welcome' + ' '+ userName
-// }
+var userData = sessionStorage.getItem("userData")
+if (userData){
+ var userName = sessionStorage.getItem("userData")
+ var userTitle = document.getElementById('title')
+ userTitle.innerHTML=  'Welcome' + ' '+ userName
+}
 

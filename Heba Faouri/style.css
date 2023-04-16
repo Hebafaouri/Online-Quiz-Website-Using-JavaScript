@@ -389,8 +389,12 @@ span {
 text-align: left!important;
 color: red;
 }
+.pass-forget{
+  text-decoration: none;
+  color: #444;
+}
 .alert-success{
-  color: rgb(163, 241, 163);
+  color: rgb(44, 245, 44);
   width: 100px;
   margin: 20px;
   text-align: center;
