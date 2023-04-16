@@ -75,7 +75,7 @@ form.sign-in-form {
 .input-field {
   max-width: 380px;
   width: 100%;
-  background-color: #f8e7c381;
+  background-color: #a2c1f081;
   margin: 10px 0;
   height: 55px;
   border-radius: 55px;
@@ -104,7 +104,7 @@ form.sign-in-form {
 }
 
 .input-field input::placeholder {
-  color: #aaa;
+  color: #626363;
   font-weight: 500;
 }
 
@@ -120,12 +120,12 @@ form.sign-in-form {
 
 .btn {
   width: 150px;
-  background-color: #fdbb59bd;
+  background-color: #8db3dc;
   border: none;
   outline: none;
   height: 49px;
   border-radius: 49px;
-  color: #fff;
+  color: #e6f1ff;
   text-transform: uppercase;
   font-weight: 600;
   margin: 10px 0;
@@ -134,7 +134,7 @@ form.sign-in-form {
 }
 
 .btn:hover {
-  background-color: #72573598;
+  background-color: #b2c4f798;
 }
 .panels-container {
   position: absolute;
@@ -154,7 +154,7 @@ form.sign-in-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #ecd0b8 0%, #eb7e18 100%);
+  background-image: linear-gradient(-45deg, #acd8fc 0%, #66b0ff 100%);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;

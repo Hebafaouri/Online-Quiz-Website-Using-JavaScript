@@ -113,7 +113,7 @@ for (var i = 0; i < newArray.length; i++) {
     errorLogin.classList.remove('alert-failed')
       errorLogin.innerHTML="correct password and email";
       sessionStorage.setItem("userData",newArray[i][1]);
-      window.location.href = "../Dalia alkhatib/Dalia Alkhatib/index.html";
+      window.location.href = "../Dalia alkhatib/index.html";
       break;
     }
     else{
@@ -123,12 +123,10 @@ for (var i = 0; i < newArray.length; i++) {
 }
 }
 
-
-
-var userData = sessionStorage.getItem("userData")
-if (userData){
- var userName = sessionStorage.getItem("userData")
- var userTitle = document.getElementById('title')
- userTitle.innerHTML=  'Welcome' + ' '+ userName
-}
+// var userData = sessionStorage.getItem("userData")
+// if (userData){
+//  var userName = sessionStorage.getItem("userData")
+//  var userTitle = document.getElementById('title')
+//  userTitle.innerHTML=  'Welcome' + ' '+ userName
+// }
 
