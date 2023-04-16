@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Courier New', Courier, monospace;
+    
 }
 
 body{
@@ -13,6 +14,7 @@ body{
     linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
     linear-gradient(#eee .1em, transparent .1em);
     background-size: 150% 1.2em;
+
 }
 
 ::selection{
@@ -31,59 +33,15 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.showanswer{ 
-    /* height: 600px; */
-    width: 80%;
-    margin: auto;
-    display: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: white;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
-                0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-
-.showanswer .answer_text {
-
-    font-weight:70;
-    color: black;
-    font-weight: bold;
-    width: 95%;
-    margin: auto;
-    font-family: 'Poppins', sans-serif;
-
-}
-.buttonss
-{
-    width: 50%;
-    margin: auto;
-}
-.showanswer .buttons button{
-    margin: 0 5px;
-    height: 40px;
-    width: 100px;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid #007bff;
-    transition: all 0.3s ease;
-}
 
 .info_box.activeInfo,
 .quiz_box.activeQuiz,
 .result_box.activeResult{
     opacity: 1;
-    /* z-index: 5; */
+    z-index: 5;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
 }
-
 
 .start_btn button{
     font-size: 25px;
@@ -93,13 +51,12 @@ body{
     outline: none;
     border: none;
     border-radius: 5px;
-    background: #fff;
+    background: #332929;
     cursor: pointer;
 }
 
 .info_box{
-    width: 60%;
-    margin: auto;
+    width: 540px;
     background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
@@ -157,10 +114,15 @@ body{
 }
 
 .quiz_box{
-    width: 80%;
-    margin: auto;
-    background: #fff;
+    width: 650px;
+    height: 600px;
+    background-color: #fff; 
+    background-image: 
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 150% 1.2em;
     border-radius: 5px;
+    border: 5px soild black;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
@@ -172,7 +134,7 @@ body{
     z-index: 2;
     height: 70px;
     padding: 0 30px;
-    background: #fff;
+    background: #000000;
     border-radius: 5px 5px 0 0;
     display: flex;
     align-items: center;
@@ -181,8 +143,9 @@ body{
 }
 
 .quiz_box header .title{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
+    color: white;
 }
 
 .quiz_box header .timer{
@@ -226,31 +189,36 @@ body{
     position: absolute;
     bottom: 0px;
     left: 0px;
-    height: 3px;
-    background: #007bff;
+    height:5px;
+    background:#0263ca;
 }
 
 section{
     padding: 25px 30px 20px 30px;
-    background: #fff;
+   
 }
 
 section .que_text{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
 }
 
 section .option_list{
     padding: 20px 0px;
     display: block;   
+    font-size: 50pt;
+    height: 400px;
 }
 
 section .option_list .option{
-    background: aliceblue;
+    background:#004085;
     border: 1px solid #84c5fe;
+    color: white;
     border-radius: 5px;
-    padding: 8px 15px;
-    font-size: 17px;
+    padding: 15px 15px;
+    font-family: 'Loved by the King', cursive;
+    text-align: center;
+    font-size: 30px;
     margin-bottom: 15px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -264,22 +232,11 @@ section .option_list .option:last-child{
 }
 
 section .option_list .option:hover{
-    color: #004085;
-    background: #cce5ff;
+    color: #000000;
+    background: #8db3dc;
     border: 1px solid #b8daff;
 }
 
-section .option_list .option.correct{
-    color: #155724;
-    background: #d4edda;
-    border: 1px solid #c3e6cb;
-}
-
-section .option_list .option.incorrect{
-    color: #721c24;
-    background: #f8d7da;
-    border: 1px solid #f5c6cb;
-}
 
 section .option_list .option.disabled{
     pointer-events: none;
@@ -296,11 +253,11 @@ section .option_list .option .icon{
     transition: all 0.3s ease;
     line-height: 24px;
 }
-.option_list .option .icon.tick{
+/* .option_list .option .icon.tick{
     color: #23903c;
     border-color: #23903c;
     background: #d4edda;
-}
+} */
 
 .option_list .option .icon.cross{
     color: #a42834;
@@ -315,8 +272,11 @@ footer{
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid lightgrey;
+    background-color: #000000;
 }
-
+.total_que{
+    color: white;
+}
 footer .total_que span{
     display: flex;
     user-select: none;
@@ -325,6 +285,7 @@ footer .total_que span{
 footer .total_que span p{
     font-weight: 500;
     padding: 0 5px;
+
 }
 
 footer .total_que span p:first-child{
@@ -365,8 +326,7 @@ footer button.show{
     border-radius: 5px;
     display: flex;
     padding: 25px 30px;
-    width:80%;
-    margin: auto;
+    width: 450px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -374,8 +334,6 @@ footer button.show{
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
-    color: white;
-    font-weight: bold;
 }
 
 .result_box .icon{
@@ -400,10 +358,7 @@ footer button.show{
     padding: 0 4px;
     font-weight: 600;
 }
-.result_box .score_textt span p{
-    padding: 0 4px;
-    font-weight: 600;
-}
+
 .result_box .buttons{
     display: flex;
     margin: 20px 0;
@@ -423,12 +378,12 @@ footer button.show{
     transition: all 0.3s ease;
 }
 
-.buttons button.Continue_btn{
+.buttons button.restart{
     color: #fff;
     background: #007bff;
 }
 
-.buttons button.Continue_btn:hover{
+.buttons button.restart:hover{
     background: #0263ca;
 }
 
@@ -441,4 +396,5 @@ footer button.show{
     color: #fff;
     background: #007bff;
 }
+
 

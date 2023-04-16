@@ -116,7 +116,6 @@ let widthValue = 0;
 // getting questions and options from array
 function showQuetions(index){
     const que_text = document.querySelector(".que_text");
-
     //creating a new span and div tag for question and option and passing the value using array index
     let que_tag = '<span>'+ questions[index].numb + ". " + questions[index].question +'</span>';
     let option_tag = '<div class="option"><span>'+ questions[index].options[0] +'</span></div>'
@@ -155,12 +154,9 @@ next_btn.onclick = ()=>{
         que_numb++; //increment the que_numb value
         showQuetions(que_count); //calling showQestions function
         queCounter(que_numb); //passing que_numb value to queCounter
-        // clearInterval(counter); //clear counter
-        // clearInterval(counterLine); //clear counterLine
-        // startTimer(timeValue); //calling startTimer function
-        // startTimerLine(widthValue); //calling startTimerLine function
         timeText.textContent = "Time Left"; //change the timeText to Time Left
         next_btn.classList.remove("show"); //hide the next button
+        // sessionStorage.setItem("quizpage",);
     }else{
         clearInterval(counter); //clear counter
         clearInterval(counterLine); //clear counterLine
@@ -180,6 +176,7 @@ let answeruser = []
 
 //if user clicked on option
 function optionSelected(answer){
+    answer.style.backgroundColor="#4c96e4";
     clearInterval(counter); //clear counter
     clearInterval(counterLine); //clear counterLine
     let userAns = answer.textContent; //getting user selected option
@@ -216,20 +213,20 @@ function showResult(){
 
     if (userScore >= 3){ // if user scored more than 3
 
-   
+        result_box.style.backgroundColor="green"
+        result_box.style.Color="white"
         let scoreTag = '<span>Congrats! 🎉, Your Mark <p>'+ userScore +'</p> / <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
         let scoree = '<span><p>You have '+ userScore +' correct answers</p> </span>';
         scoreTextt.innerHTML = scoree;  
-        document.body.style.backgroundColor="green"
     }
     else if(userScore >=0 && userScore <3){ // if user scored more than 1
-       
+        result_box.style.backgroundColor="red"
+        result_box.style.Color="white"
         let scoreTag = '<span>unfortunately 😐, Your Mark <p>'+ userScore +'</p>/<p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
         let scoree = '<span><p>You have '+(questions.length-userScore) +' wrong answers</p> </span>';
         scoreTextt.innerHTML = scoree; 
-        document.body.style.backgroundColor="red"
     }
 
 }
@@ -273,7 +270,6 @@ function showanser(){
 
 const myButton = document.createElement("button");
 myButton.innerHTML = "Back";
-
 buttonss.appendChild(myButton);
 
 myButton.style.backgroundColor = "#fff";
