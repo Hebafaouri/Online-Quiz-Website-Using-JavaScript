@@ -13,6 +13,10 @@
    x[myIndex-1].style.display = "block";
    setTimeout(carousel, 3000);
  }
+ function functionlogin(){
+  window.location.href ="../Heba Faouri/index.html"
+ }
+
 //  var button = document.getElementById("loginbtn");
 //  var openForm = function(button) {
 // 	window.location.href = "../Heba Faouri/index.html";

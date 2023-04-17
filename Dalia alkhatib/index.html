@@ -10,50 +10,60 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>QuizApp</title>
     <link rel="stylesheet" href="style.css">
+<!--FONT AWESOME-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
 
 </head>
 <body> 
-<header class="p-3 bg-dark text-white navbar-toggler">
-    <div class="container navbar-toggler">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-        </a>
+ <!-- navbar Code -->
+ <nav class="navbar bg-dark navbar-expand-lg ">
+  <div class="container-fluid">
 
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Quiz</a></li>
-            <li><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
-
-        </ul>
-
-        <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me">
-            <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-        </form> -->
-
-        <div class="text-end ms-auto">
-            <button type="button" class="btn btn-outline-light me-3" id="loginbtn">Login</button>
-            <button type="button" class="btn btn-warning me-3">Sign-up</button>
-        </div>
-        </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon text-black-50 bg-white" style="border-radius: 20%; "></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+            <a class="nav-link active text-white-50" aria-current="page">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active text-white-50" href="#">Quiz</a>
+        </li>
+    
+    
+        <li class="nav-item dropdown">
+            <a class="nav-link active text-white-50" href="#">contact Us</a>                
+          </a>
+        
     </div>
-    </header>
+    <div class="text-end ms-auto">
+      <button type="button" class="btn btn-outline-light me-3" onclick="functionlogin()" id="loginbtn">Login</button>
+      <button type="button" class="btn  me-3" onclick = "functionlogin()" id="sign-upbtn">Sign-up</button>
+  </div>
+  </div>
+</nav>
     <!-- Slide Show -->
-<section>
+<section class="slide">
+  <div class="slideleft">
   <img class="mySlides" src="https://img.freepik.com/premium-vector/quiz-logo-with-speech-bubble-icon_149152-811.jpg?w=2000"
-  style="width:100%">
-  <img class="mySlides" src="https://www.pewresearch.org/internet/wp-content/uploads/sites/9/2017/02/PI_2017.02.08_Algorithms_featured.png"
   style="width:100%">
   <img class="mySlides" src="https://www.trios.com/uploads/2017/05/woman-holding-tablet-in-server-room.jpg"
   style="width:100%">
+</div>
+  <section class="slideright">
+    <h1 id="title">Welcome to the Quiz App</h1>
+    <p>We're excited to have you apply for the position! To help us get to know you better, we've created a short quiz that should take about 15 minutes to complete.</p>
+    </div> 
+    </section>
 </section>
 
 
-<section class="aboutsite">
-<h1 id="title">Welcome to the Quiz App</h1>
-<p>We're excited to have you apply for the position! To help us get to know you better, we've created a short quiz that should take about 15 minutes to complete.</p>
-</div> 
-</section>
+
 <div class="containerone11">
     <div class="card11">
       <div class="box11">
@@ -89,12 +99,7 @@
     </div>
   </div>
 <section id="contact">
-  <div id="contact-img">
-    <img src="Screenshot (93).png" alt="">
-  </div>
-
-    
-    <form action="#" method="post">
+    <form action="#" method="post" id="">
       <h2 >Contact Us</h2>
     <label for="name"  >Name:</label>
     <input type="text" id="name" name="name" required>
@@ -108,32 +113,18 @@
     <input type="submit" value="Send">
     </form>
 </section>
-<footer>
-  <div class="footer-content">
-      <h3>QuizApp</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
-      <ul class="socials">
-<<<<<<< HEAD:Dalia alkhatib/Dalia Alkhatib/index.html
-          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-=======
-          <li><a href="https://ar-ar.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="https://twitter.com/?lang=ar"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.google.com/"><i class="fa fa-google-plus"></i></a></li>
-          <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
-          <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square"></i></a></li>
->>>>>>> 342c9aff77d5ab14601909158e7e9c782763396e:Dalia alkhatib/index.html
-      </ul>
-  </div>
-  <div class="footer-bottom">
-      <p>copyright &copy;2023 </p>
-  </div>
-</footer>
-<script src="main .js"></script>
 
+<footer>
+  <p>&copy; 2023 My Website</p>
+  <ul>
+    <li><a href="https://www.facebook.com">Facebook</a></li>
+    <li><a href="https://www.twitter.com">Twitter</a></li>
+    <li><a href="https://www.instagram.com">Instagram</a></li>
+  </ul>
+</footer>
+
+
+<script src="main .js"></script>
 
 </body>
 </html>
