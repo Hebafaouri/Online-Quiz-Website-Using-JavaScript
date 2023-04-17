@@ -17,13 +17,13 @@
   window.location.href ="../Heba Faouri/index.html"
  }
 
-//  var button = document.getElementById("loginbtn");
-//  var openForm = function(button) {
-// 	window.location.href = "../Heba Faouri/index.html";
-// };
-//  var userData = sessionStorage.getItem("userData")
-// if (userData){
-//  var userName = sessionStorage.getItem("userData")
-//  var userTitle = document.getElementById('title')
-//  userTitle.innerHTML=  'Welcome' + ' '+ userName
-// }
+ var button = document.getElementById("loginbtn");
+ var openForm = function(button) {
+	window.location.href = "../Heba Faouri/index.html";
+};
+ var userData = sessionStorage.getItem("userData")
+if (userData){
+ var userName = sessionStorage.getItem("userData")
+ var userTitle = document.getElementById('title')
+ userTitle.innerHTML=  'Welcome' + ' '+ userName
+}
