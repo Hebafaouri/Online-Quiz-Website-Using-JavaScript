@@ -13,7 +13,7 @@ input {
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px #fdd68181 inset !important;
+  -webkit-box-shadow: 0 0 0 1000px #cedcf1c4 inset !important;
   -webkit-border-radius: 55px;
 }
 
@@ -75,7 +75,7 @@ form.sign-in-form {
 .input-field {
   max-width: 380px;
   width: 100%;
-  background-color: #a2c1f081;
+  background-color: #cedcf1c4;
   margin: 10px 0;
   height: 55px;
   border-radius: 55px;
@@ -134,7 +134,7 @@ form.sign-in-form {
 }
 
 .btn:hover {
-  background-color: #b2c4f798;
+  background-color: #9cb6fd98;
 }
 .panels-container {
   position: absolute;
@@ -154,7 +154,7 @@ form.sign-in-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #acd8fc 0%, #66b0ff 100%);
+  background-image: linear-gradient(-45deg, #acd8fc 0%, #192BB0 100%);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
