@@ -29,4 +29,19 @@ if (userData){
  userTitle.innerHTML=  'Welcome' + ' '+ userName
 }
 
+let btn_quiz = document.getElementById("btn_quiz");
+btn_quiz.addEventListener('click',function()
+{
+  if (sessionStorage.getItem("userData")===null)
+  {
+    window.location.href="../Heba Faouri/index.html";
+  }
+  else
+  {
+    window.location.href="../Rawan Alhaleeq/quez1.html";
+  }  
+}
+)
+
+
 
