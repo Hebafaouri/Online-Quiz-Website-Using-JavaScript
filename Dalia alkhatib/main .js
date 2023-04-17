@@ -18,6 +18,7 @@
  }
 
  var button = document.getElementById("loginbtn");
+
  var openForm = function(button) {
 	window.location.href = "../Heba Faouri/index.html";
 };
@@ -27,3 +28,5 @@ if (userData){
  var userTitle = document.getElementById('title')
  userTitle.innerHTML=  'Welcome' + ' '+ userName
 }
+
+
